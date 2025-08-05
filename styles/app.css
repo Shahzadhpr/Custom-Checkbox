@@ -5,7 +5,7 @@
 */
 @font-face {
     font-family: "YekanBakh Bold";
-    src: url(../fonts/YekanBakh-Bold.woff2) format("woff2");
+    src: url(../fonts/YekanBakh-Bold.woff) format("woff2");
 }
 
 @font-face {
@@ -97,7 +97,80 @@ html {
 }
 
 body {
-    font-family: "YekanBakh Medium", sans-serif;
+    font-family: "YekanBakh Regular", sans-serif;
 	font-size: 1.6rem;
 	color: var(--text-color);
+}
+
+.icon-pack {
+    display: none;
+}
+
+.btn-filter {
+	width: 30.2rem;
+    height: 4.8rem;
+    padding: 1.2rem 1.6rem;
+    border-radius: .8rem;
+    background-color: white;
+    border: 1px solid var(--secondery-color);
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .6rem;
+	margin: 3.2rem auto 0 auto;
+	font-family: "YekanBakh Medium";
+}
+
+.btn-filter__icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.filter {
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	inset: 0;
+	background-color: white;
+	transition: all 150ms ease;
+}
+
+.filter--show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.filter__header {
+	background-color: var(--secondery-color);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2.4rem 3.2rem;
+}
+
+.filter__header-text {
+	font-family: "YekanBakh Bold";
+	font-size: 1.8rem;
+}
+
+.filter__header__icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.filter-body {
+	padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+}
+
+.filter__btn {
+	width: 100%;
+	padding: 1.2rem 1.6rem;
+	background-color: var(--btn-color);
+	color: white;
+	border-radius: .8rem;
+	border: none;
+	outline: none;
+	text-align: center;
+	font-family: "YekanBakh Medium";
 }
