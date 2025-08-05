@@ -199,9 +199,6 @@ body {
 
 .filter-color {
 	font-family: "YekanBakh Medium";
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .filter-color__name {
@@ -214,6 +211,31 @@ body {
 	width: .8rem;
 	height: .8rem;
 	border-radius: 100%;
+}
+
+.checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.checkbox__input {
+	display: none;
+}
+
+.checkbox__marker {
+	display: block;
+	width: 2.4rem;
+	height: 2.4rem;
+	border-radius: .6rem;
+	border: 1px solid #E5E5E5;
+	background-color: white;
+	transition: all 40ms ease-in;
+}
+
+.checkbox__input:checked + .checkbox__marker{
+	border-color: var(--primery-color);
+	background-color: var(--primery-color);
 }
 
 .filter__btn {
