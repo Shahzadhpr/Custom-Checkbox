@@ -40,6 +40,9 @@ Give feedback 🗨️
 
 &nbsp;
 
+---
 
-                                                    Designed & developed with ❤️ by Shahzad Hassanpour
+<div align="center">
+  Designed & developed with ❤️ by Shahzad Hassanpour
+</div>
 
